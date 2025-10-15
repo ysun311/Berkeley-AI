@@ -1,0 +1,8 @@
+"The Man-Machine stands as one of the pinnacles of 70's rock music"
+cat manmachine.txt
+The Man-Machine stands as one of the pinnacles of 70's rock music
+
+(base) gsun@MacBook-Y6914 kraftwerk % cat manmachine.txt
+
+
+
