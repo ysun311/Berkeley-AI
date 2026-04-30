@@ -1,4 +1,4 @@
-# Yiqi (Giselle) Sun — Berkeley AI/ML Portfolio
+# Giselle Sun — Berkeley AI/ML Portfolio
 
 Hi, I'm Giselle. I'm a Product Manager at Netflix focused on streaming quality, app reliability, device lifecycle and AI-driven decision platforms. This repository is my portfolio for the **UC Berkeley Professional Certificate in Machine Learning and Artificial Intelligence** — built jointly by Berkeley's College of Engineering and Haas School of Business.
 
