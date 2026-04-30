@@ -1,4 +1,4 @@
-# Assignment 24.1 — Netflix Member Retention: Final Capstone
+# Capstone Project: Netflix Retention & Churn — Classification and Regression Analysis
 
 ## Research Question
 
@@ -11,11 +11,11 @@ This capstone analyzes simulated Netflix member data to identify the key drivers
 ## Repository Structure
 
 ```
-assignment24_1_project/
+Capstone_Netflix_Retention_Churn_Classification_Regression/
 ├── notebook_24_1.ipynb        # Final analysis notebook
 └── README.md
 
-assignment20_1_project/        # Module 20 initial report (data lives here)
+Capstone_Netflix_Retention_Baseline_Analysis/        # Module 20 initial report (data lives here)
 ├── data/
 │   └── netflix_retention_simulated.csv
 ├── notebook_20_1.ipynb
@@ -71,5 +71,5 @@ All models evaluated using **ROC-AUC** on a held-out validation set, with final 
 
 ## Notebooks
 
-- [Module 20.1 — EDA & Baseline](../assignment20_1_project/notebook_20_1.ipynb)
+- [Module 20.1 — EDA & Baseline](../Capstone_Netflix_Retention_Baseline_Analysis/notebook_20_1.ipynb)
 - [Module 24.1 — Final Models & Findings](notebook_24_1.ipynb)

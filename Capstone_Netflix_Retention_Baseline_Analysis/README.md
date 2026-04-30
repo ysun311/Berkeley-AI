@@ -1,4 +1,4 @@
-# Assignment 20.1 — Netflix Member Retention: Initial EDA & Baseline Model
+# Capstone Project: Netflix Retention Baseline Analysis
 
 ## Project Overview
 
@@ -11,7 +11,7 @@ The dataset is a simulated, synthetic dataset of 7,500 member records created fo
 ## Repository Structure
 
 ```
-assignment20_1_project/
+Capstone_Netflix_Retention_Baseline_Analysis/
 ├── data/
 │   └── netflix_retention_simulated.csv   # Synthetic dataset (7,500 records)
 ├── notebook_20_1.ipynb                   # Main analysis notebook

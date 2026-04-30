@@ -1,6 +1,6 @@
 # What Drives the Price of a Car?
 
-**Assignment 11.1 — CRISP-DM Applied to Used Car Pricing**
+**Used Car Pricing Regression — CRISP-DM Analysis**
 
 ## Summary of Findings
 
@@ -42,7 +42,7 @@ Using a dataset of ~426K used car listings (filtered to ~300K after cleaning), w
 ## Project Structure
 
 ```
-assignment11_1_project/
+Used_Car_Pricing_Regression/
 ├── CarPriceAnalysis.ipynb   # Main analysis notebook
 ├── data/
 │   └── vehicles.csv         # Used car dataset

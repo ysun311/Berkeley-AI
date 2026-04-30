@@ -1,4 +1,4 @@
-# Assignment 17.1 — Comparing Classifiers: Bank Marketing Dataset
+# Bank Marketing Classification — Comparing Classifiers
 
 ## Business Problem
 
