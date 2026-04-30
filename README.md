@@ -1,51 +1,54 @@
-# Will the Customer Accept the Coupon? — Starter EDA
+# Yiqi (Giselle) Sun — Berkeley AI/ML Portfolio
 
-This repository explores factors driving **coupon acceptance** while driving.
+Hi, I'm Giselle. I'm a Product Manager at Netflix focused on streaming quality, app reliability, device lifecycle and AI-driven decision platforms. This repository is my portfolio for the **UC Berkeley Professional Certificate in Machine Learning and Artificial Intelligence** — built jointly by Berkeley's College of Engineering and Haas School of Business.
 
-## Data
-- Source: UCI ML repository (Mechanical Turk driving scenarios)
-- File: `coupons.csv`
+Five projects across regression, classification, ensemble methods, and feature engineering. Each one ends with a business translation, because models that nobody acts on don't matter.
 
-## Label
-- Detected acceptance label column: `Y`
+---
 
-## Quick stats
-- Rows: **12684**
-- Columns: **26**
-- Overall acceptance rate: **0.568** (fraction of 1s) if label was detected.
+## Capstone — Predicting Netflix Member Retention
 
-## Questions explored
-1. Which **coupon types** are most likely to be accepted among all coupon types? 
-2. How do **contextual factors** (destination, passenger, time, weather, expiration) shift acceptance?
-3. How do **habits** (bar/coffee/restaurant frequencies) relate to acceptance for different types of coupons?
+**[Capstone: Netflix Retention & Churn](./Capstone_Netflix_Retention_Churn_Classification_Regression)**
 
-## Key findings
-1.Bar Coupons
-- **Frequent bar-goers** (more than 3×/month) are **2.5× more likely** to accept bar coupons than infrequent visitors, highlighting strong behavioral alignment.  
-- **Social and contextual factors** matter — drivers with **friends or partners (no kids)** and aged **26–40** are most likely to redeem.  
-- **Middle-income and unmarried-partner drivers** show lower acceptance, suggesting lifestyle context outweighs income.
+Built and compared four ML models on a synthetic dataset of 7,500 streaming-member records to identify the strongest drivers of retention.
 
-2. Coffee House Coupons
-- **Frequent coffee drinkers** (>3×/month) are **1.5× more likely** to accept coffee coupons, with acceptance peaking **in the morning** and **en route to work**.  
-- **Female drivers** and those with **no urgent destination** show higher engagement, emphasizing convenience and timing.  
-- **Lower and higher income segments** are more responsive than middle-income drivers, suggesting value sensitivity and habitual consumption both drive behavior.
+> *Note: Dataset is synthetic. It does not contain any real Netflix member data.*
 
-3. All Coupons (Cross-Type)
-- **Carry Out & Takeaway** coupons have the **highest acceptance rate**, while **Bar** and **Restaurant** coupons perform worst.  
-- Drivers prefer **low-effort, convenience-based offers** over those requiring detours or extended stops.  
+- **Models:** Logistic Regression, Ridge Logistic Regression, Random Forest, Gradient Boosting
+- **Tuning:** GridSearchCV across all four
+- **Metric:** ROC-AUC (chosen because target is imbalanced at ~14% churn)
+- **Headline insight:** Completion rate (titles finished ÷ titles started) predicts retention *better* than raw viewing hours — content-match quality outperforms content volume
+- **Other findings:** active days is the single strongest signal; mobile-only users have meaningfully higher churn risk; kids-in-household reduces churn
 
+Findings translated into four product recommendations: re-engagement campaigns for low-activity members, recommendation-relevance work for high-abandonment users, multi-device adoption pushes for mobile-only members, and kids-content investment for family accounts.
 
-## Recommendations & Next steps
-- Comparing all Coupon types:
-Drivers are most responsive to **convenient, quick-stop coupons** like Carry Out offers.  
-Coupons requiring **longer detours or higher effort** (e.g., dining in) see lower engagement.  
-Future strategies should emphasize **low-friction, convenience-based coupon types** 
-- For Bar Coupons: 
-Drivers who **frequent bars**, **travel with adult companions**, and are in the **26–40 age range** are the most receptive to bar coupons.  
-Acceptance is driven more by **social context and lifestyle patterns** than by income level.  
-Future targeting should emphasize **behavioral and situational signals** over broad demographic traits.
-- For Coffee House Coupons:
-Drivers who **frequent coffeehouses**, **travel during morning or early afternoon hours**, and have **no urgent destinations** are most receptive to coffee coupons.  
-Acceptance likelihood increases for **female drivers** and those at the **lower or higher ends of the income spectrum**.  
-Future targeting should emphasize **habit frequency, time of day, and trip context** over generic demographic factors.
+---
 
+## Other Projects
+
+| # | Project | Problem | Approach | Headline Result |
+|---|---|---|---|---|
+| 04 | [Netflix Retention — Baseline](./Capstone_Netflix_Retention_Baseline_Analysis) | Same dataset, EDA + baseline | Logistic Regression, feature engineering | Test ROC-AUC ~0.85; identified active days + completion rate as top features |
+| 03 | [Bank Marketing Classification](./Bank_Marketing_Classification) | UCI Portuguese bank dataset (41K records, ~11% positive). Will the client subscribe? | Logistic Regression, KNN, Decision Tree, SVM compared via GridSearchCV | Logistic Regression and SVM tied for best AUC; call duration and Euribor rate were strongest signals |
+| 02 | [Used Car Pricing — CRISP-DM](./Used_Car_Pricing_Regression) | Kaggle dataset (~426K listings, ~300K after cleaning). What drives used-car prices? | CRISP-DM framework; Ridge Regression with L2 regularization, GridSearchCV | Test RMSE ~$8K-$9.5K, R² ~0.65-0.70; mileage, age, and salvage status dominate |
+| 01 | [Coupon Acceptance EDA](./Coupon_Acceptance_EDA) | UCI Mechanical Turk driving scenarios (12,684 records). Which contextual factors drive coupon acceptance? | EDA + behavioral segmentation | Frequent bar-goers 2.5x more likely to accept bar coupons; carryout coupons outperform dine-in by a wide margin |
+
+---
+
+## Skills Demonstrated
+
+- **Modeling:** logistic regression, ridge regression, k-nearest neighbors, decision trees, SVMs, random forests, gradient boosting
+- **Pipeline:** train/val/test splits, feature engineering, hyperparameter tuning via GridSearchCV, regularization
+- **Evaluation:** ROC-AUC for imbalanced classification, RMSE/R² for regression, threshold-agnostic comparison
+- **Tools:** Python, pandas, scikit-learn, NumPy, matplotlib, seaborn, Jupyter, Git
+- **Methodology:** CRISP-DM, EDA-first approach, business translation as a non-negotiable last step
+
+---
+
+## About Me
+
+PM at Netflix since 2022, formerly at American Airlines (Pricing Strategy → Revenue Insights → Ancillary Product). Chemical Engineering degree from UT Austin, three years as a process engineer, then an MBA from Northwestern Kellogg.
+
+I treat AI as a tool, not a destination. Most of my best work has been turning fragmented data into trusted workflows, then evolving those workflows into intelligent decision platforms.
+
+→ [LinkedIn](https://www.linkedin.com/in/yiqi-giselle-sun/)
